@@ -132,7 +132,7 @@ function buildAndShowHomeHTML (categories) {
             buildCategoriesViewHtml(categories,
                                     homeHtml,
                                     chooseRandomCategory);
-          var homeHtmlToInsertIntoMainPage =    'chosenCategoryShortName';                      
+          var homeHtmlToInsertIntoMainPage =    "(" + chosenCategoryShortName + ")";                      
           insertHtml("#main-content", homeHtmlToInsertIntoMainPage);  
         },
         false);
