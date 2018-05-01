@@ -132,6 +132,14 @@ function buildAndShowHomeHTML (categories) {
             buildCategoriesViewHtml(categories,
                                     homeHtml,
                                     chooseRandomCategory);
+          /*
+          var insertProperty = function (string, propName, propValue) {
+          var propToReplace = "{{" + propName + "}}";
+          string = string
+            .replace(new RegExp(propToReplace, "g"), propValue);
+          return string;
+          };
+          */                         
           var homeHtmlToInsertIntoMainPage = "'{{" + chosenCategoryShortName + "}}'";                     
           insertHtml("#main-content", homeHtmlToInsertIntoMainPage);  
         },
